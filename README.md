@@ -12,7 +12,7 @@ order_date
 amount
 product_id
 
-Steps Performed
+## Steps Performed
 Created the online_sales table
 Inserted sample sales data (20 records)
 Displayed full dataset
@@ -25,7 +25,7 @@ Exported monthly summary as CSV
 Added SQL, CSV, and screenshots to GitHub
 
 
-Main SQL Query (Monthly Revenue & Volume)
+## Main SQL Query (Monthly Revenue & Volume)
 SELECT
 EXTRACT(YEAR FROM order_date) AS year,
 EXTRACT(MONTH FROM order_date) AS month,
@@ -36,7 +36,7 @@ GROUP BY EXTRACT(YEAR FROM order_date), EXTRACT(MONTH FROM order_date)
 ORDER BY year, month;
 
 
-Top 3 Revenue Months Query
+## Top 3 Revenue Months Query
 SELECT
 EXTRACT(YEAR FROM order_date) AS year,
 EXTRACT(MONTH FROM order_date) AS month,
@@ -47,7 +47,7 @@ ORDER BY revenue DESC
 LIMIT 3;
 
 
-Files Included in Repository
+## Files Included in Repository
 monthly_summary.csv
 monthly_summary.sql
 screenshot_full_table.png
@@ -56,7 +56,7 @@ screenshot_top3.png
 README.md
 
 
-Output Summary
+## Output Summary
 Analysis performed using MySQL
 Revenue and order volume calculated correctly
 Top 3 months identified
@@ -65,5 +65,6 @@ Repository files organized correctly
 
  ## AUTHOR
  Bingi Manoj
+
 
 
